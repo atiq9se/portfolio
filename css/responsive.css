@@ -1,0 +1,149 @@
+@media(min-width: 1200px) {}
+
+@media(min-width: 992px) and (max-width: 1199px) {}
+
+@media(min-width:768px) and (max-width:991px) {
+    
+     /*team part css start*/
+    .team_text {
+        margin-top: 40px;
+        height: 420px;
+    }
+    /*  contact part css start  */
+    .contact_form {
+        width: 40%;
+    }
+    /*contact part css end*/
+    
+    /*   footer part css start*/
+    .footer_header {
+        padding-bottom: 25px;
+        padding-top: 30px;
+    }
+    /*    footer part css end*/
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    
+    /* menu part css start*/
+    .customnav {
+        background: #000;
+    }
+    
+    /*banner part css start*/
+    .banner_text_div {
+        max-width: 500px;
+    }
+    /*about part css start*/
+  
+    /*team part css start*/
+    .team_text {
+        margin-left: 0px;
+        height: 420px;
+    }
+    .team_text:after {
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid #0088cc;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    /*team part css end*/
+    
+    /*  contact part css start  */
+    .contact_form {
+        width: 50%;
+    }
+    /*contact part css end*/
+    
+    /*   footer part css start*/
+    .footer_header {
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+    /*    footer part css end*/
+}
+
+@media(max-width:575px) {
+    /* menu part css start*/
+    .customnav {
+        background: #000;
+    }
+    
+    /*banner part css start */
+    .banner_text h3 {
+        font-size: 28px;
+        line-height: 60px;
+    }
+    .banner_text h2 {
+        font-size: 42px;
+        line-height: 40px;
+    }
+    .banner_text p {
+        padding: 40px 35px;
+    }
+    /*banner part css end */
+    
+    /*team part css start*/
+    .team_text {
+        padding: 20px 10px;
+        margin-left: 0px;
+        height: 520px;
+    }
+    .team_text:after {
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid #0088cc;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    /*team part css end*/
+    
+    /*skill part css start*/
+    #counter_part {
+        padding: 0;
+        padding-top: 50px;
+    }
+    .skill {
+        margin: 20px 0px;
+        padding: 30px 10px;
+    }
+    /*skill part css end*/
+    
+    /*testimonial part css start*/
+    .header_all h2 {
+        font-size: 22px;
+    }
+    .testimonial_icon h5 {
+        font-size: 25px;
+    }
+    .testimonial_item p {
+        text-align: justify;
+    }
+    /*testimonial part css end*/
+    
+    /*  contact part css start  */
+    .contact_form {
+        width: 80%;
+    }
+    /*contact part css end*/
+    
+    /*   footer part css start*/
+    .footer_header {
+        padding-bottom: 25px;
+        padding-top: 40px;
+    }
+    /*    footer part css end*/
+}
