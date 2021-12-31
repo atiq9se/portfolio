@@ -88,6 +88,9 @@
     .banner_text p {
         padding: 40px 35px;
     }
+    .banner_text_main{
+        display:none;
+    }
     /*banner part css end */
     
     /*team part css start*/

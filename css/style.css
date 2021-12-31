@@ -171,7 +171,9 @@ body{
 .banner_text P span{
     font-weight: 700;
 }
-
+.banner_text_mobile{
+    display: none;
+}
 /* banner part end */
 
 /*about part css start*/
