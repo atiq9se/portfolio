@@ -91,6 +91,9 @@
     .banner_text_main{
         display:none;
     }
+    .banner_text_mobile{
+        display: block;
+    }
     /*banner part css end */
     
     /*team part css start*/
