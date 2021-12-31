@@ -94,6 +94,20 @@
     .banner_text_mobile{
         display: block;
     }
+    
+    .banner_text_mobile P {
+        color: rgb(236, 231, 231);
+        font-family: 'raleway', sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        z-index: 900;
+        font-weight: 400;
+        text-align: justify;
+        padding:25px 0px;
+    }
+    .banner_text_mobile P span{
+        font-weight: 700;
+    }
     /*banner part css end */
     
     /*team part css start*/
