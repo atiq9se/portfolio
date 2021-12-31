@@ -75,7 +75,17 @@
     .customnav {
         background: #000;
     }
-    
+    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #banner_part {
+        position: relative;
+        background-size: cover;
+        background-position: -200px;
+        padding: 433px 0px;
+        z-index: 1;
+    }
     /*banner part css start */
     .banner_text h3 {
         font-size: 28px;
