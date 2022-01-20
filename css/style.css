@@ -23,6 +23,7 @@
 ul,
 ol {
     list-style-type: none;
+    margin:0px;
 }
 
 a:hover,
@@ -62,68 +63,100 @@ body{
     z-index: 999;
 }
 
+/* menu part start */
+.customnav {
+    background: #101015;
+    z-index: 999;
+    width: 100%;
+}
+.fixtop{
+    position: fixed;
+    top:0px;
+    box-shadow: 0px 0px 5px 0px rgba(252, 252, 252, 0.3);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(252, 252, 252, 0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(252, 252, 252, 0.3);
+    z-index: 999;
+    display: block;
+}
 
-/*menu part start*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #101015;
+}
+
 .logo h1{
     font-family: Alfa Slab One;
     letter-spacing: 2px;
     text-transform: uppercase;
     color:#f1f1f1;
 }
-.customnav {
-    background: #101015;
-    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
-    z-index: 999;
-    width: 100%;
-    padding: 16px 0px;
-    margin: 0px;
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
 }
 
-#mynav ul li a {
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
     position: relative;
-    font-size: 15px;
-    font-weight: 600;
-    color: #f1f1f1;
-    padding: 12px 15px;
-    text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	color: #f1f1f1;
+	padding: 12px 15px;
+	text-transform: uppercase;
+}
+#mynav ul li a {
+	position: relative;
+	font-size: 15px;
+	font-weight: 600;
+	color: #f1f1f1;
+	padding: 12px 15px;
+	text-transform: uppercase;
 }
 
-#mynav ul li a:after {
-    position: absolute;
-    content: '';
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border: 1px solid #0088cc;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .7s;
-    transform: scale(0);
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
 }
 
-#mynav ul li:hover a:after {
-    transform: scale(1);
+.burger {
+    display: none;
+    cursor: pointer;
 }
 
-#mynav ul li a:hover {
-    color: #0088cc;
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
-.customnav .nav-pills .nav-link.active {
-    background: none;
-    color: #0088cc;
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.navbar-toggler {
-    background: #0088cc;
-    margin: 10px 0px;
+.toggle .line2 {
+    opacity: 0;
 }
 
-.navbar-toggler span {
-    color: #fff;
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/*menu part end*/
 
 /*banner part start*/
 
@@ -232,7 +265,7 @@ body{
     padding-bottom: 25px;
 }
 .contact_address .contact_text p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
     color: #888;
 }
@@ -276,9 +309,9 @@ body{
     padding: 30px 0px;
 }
 .footer p{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
-    color: #fff;
+    color: #888;
     text-align: center;
 }
 /*footer part css end*/

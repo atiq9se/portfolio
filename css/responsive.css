@@ -11,6 +11,9 @@
 }
 
 @media(min-width:768px) and (max-width:991px) {
+    .nav-links {
+        width: 80%;
+    }
     
      /*team part css start*/
     .team_text {
@@ -80,13 +83,37 @@
 
 @media(max-width:575px) {
     /* menu part css start*/
+    nav {
+        min-height: 8vh;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0%;
+        height: 92vh;
+        top: 8vh;
+        background-color:#101015;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        transform: translateX(100%);
+        transition: transform.5s ease-in;
+        z-index:999;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+
     .customnav {
         background: #000;
     }
-    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+
     #banner_part {
         position: relative;
         background-size: cover;
@@ -158,6 +185,12 @@
         margin: 20px 0px;
         padding: 30px 10px;
     }
+    .table-dark thead th {
+        font-size: 16px;
+    }
+    .table-dark tbody tr {
+        font-size: 15px;
+    }
     /*skill part css end*/
     
     /*testimonial part css start*/
@@ -171,10 +204,25 @@
         text-align: justify;
     }
     /*testimonial part css end*/
-    
+    /* portfolio part css */
+    .portfolio_img p {
+        font-size: 15px;
+        padding: 5px 0px;
+    }
     /*  contact part css start  */
     .contact_form {
         width: 80%;
+    }
+    .contact_main{
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .contact_address .contact_text p {
+        font-size: 15px;
+    }
+    .footer p {
+        font-size: 13px;
     }
     /*contact part css end*/
     
