@@ -92,7 +92,8 @@ nav {
     font-family: Alfa Slab One;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color:#f1f1f1;
+    color:#eaeaea;
+    font-size: 32px;
 }
 
 .nav-links {
@@ -108,7 +109,7 @@ nav {
     position: relative;
 	font-size: 15px;
 	font-weight: 600;
-	color: #f1f1f1;
+	color: #eaeaea;
 	padding: 12px 15px;
 	text-transform: uppercase;
 }
@@ -122,10 +123,10 @@ nav {
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
+    width: 28px;
+    height: 2px;
     background-color: #fff;
-    margin: 5px;
+    margin: 6px;
 }
 
 .burger {

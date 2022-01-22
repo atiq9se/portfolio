@@ -81,7 +81,7 @@
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-    const navLink = document.querySelector('.nav-links li a');
+    const navLink = document.querySelectorAll('.nav-links li a');
     burger.addEventListener('click', () => {
         // toggle nav
         nav.classList.toggle('nav-active');
@@ -97,9 +97,6 @@
         // burger animation
         burger.classList.toggle('toggle');
 
-    });
-    navLinks.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
     });
 
 }
