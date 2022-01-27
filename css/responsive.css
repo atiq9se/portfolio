@@ -85,6 +85,7 @@
     /* menu part css start*/
     nav {
         min-height: 8vh;
+        justify-content: center;
     }
     .nav-links {
         position: absolute;
