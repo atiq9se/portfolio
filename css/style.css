@@ -209,6 +209,25 @@ nav {
 .banner_text_mobile{
     display: none;
 }
+.resumeBtn{
+    text-align: center;
+}
+.resumeBtn a{
+    display:inline-block;
+    padding:5px 20px;
+    background-color: rgb(3, 211, 3);
+    color:#fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.resumeBtn a:hover{
+    display: inline-block;
+    padding:5px 20px;
+    background-color: rgb(1, 99, 1);
+    color:#fff;
+    border-radius: 5px;
+}
 /* banner part end */
 
 /*about part css start*/
