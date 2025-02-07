@@ -211,6 +211,7 @@ nav {
 }
 .resumeBtn{
     text-align: center;
+    margin-top:15px;
 }
 .resumeBtn a{
     display:inline-block;
@@ -266,6 +267,18 @@ nav {
 
 .portfolio_img img{
     border-radius: 5px;
+}
+.projectLink{
+    margin:5px 0px;
+}
+.projectLink a{
+    border:1px solid #fff;
+    border-radius: 5px;
+    padding:5px 10px;
+    color:#fff;
+}
+.projectLink a:hover{
+    background: rgb(3, 211, 3);
 }
 
 /*portfolio part css end*/
