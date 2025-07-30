@@ -26,7 +26,7 @@
     $('.top').click(function () {
         $('html,body').animate({
             scrollTop: 0
-        }, 1000);
+        }, 100);
     }); 
      
      
@@ -39,7 +39,7 @@
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: target.offset().top - 70
-                }, 2000);
+                }, 20);
                 return false;
             }
         }
