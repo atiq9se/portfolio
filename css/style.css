@@ -172,7 +172,7 @@ nav {
 #banner_part:after {
     position: absolute;
     content: '';
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .2);
     top: 0;
     left: 0;
     height: 100%;
@@ -195,7 +195,7 @@ nav {
 }
 
 .banner_text P {
-    color: rgb(236, 231, 231);
+    color:#000;
     font-family: 'raleway', sans-serif;
     font-size: 20px;
     line-height: 28px;
@@ -224,7 +224,7 @@ nav {
 }
 .resumeBtn a:hover{
     display: inline-block;
-    padding:5px 20px;
+    padding:5px 20px 10px 20px;
     background-color: #222;
     color:#fff;
     border-radius: 5px;
@@ -258,6 +258,7 @@ nav {
     -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 1);
     box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 1);
     text-align: center;
+    transition: all linear .5s;
 }
 .portfolio_img p{
     color:#a2a2a2;
@@ -267,6 +268,12 @@ nav {
 
 .portfolio_img img{
     border-radius: 5px;
+}
+.portfolio_img:hover{
+    -webkit-box-shadow: 0px 0px 20px 20px rgba(50, 50, 50, .5);
+    -moz-box-shadow:    0px 0px 20px 20px rgba(50, 50, 50, .5);
+    box-shadow:         0px 0px 20px 20px rgba(50, 50, 50, .5);
+    transform: translatey(-7px);
 }
 .projectLink{
     margin:5px 0px;
@@ -295,6 +302,7 @@ nav {
     display:-webkit-box;
     display:-ms-flexbox;
     display: flex;
+    gap:10px;
     padding-bottom: 25px;
 }
 .contact_address .contact_text p {
@@ -303,7 +311,6 @@ nav {
     color: #888;
 }
 .contact {
-    margin: 12px 15px 5px 0px;
     width: 30px;
     height: 30px;
     background: #f1f1f1;
@@ -316,6 +323,9 @@ nav {
 .contact_icon{
     display: flex;
     justify-content: center;
+}
+.contact_text a{
+    color:#fff;
 }
 .contact_icon_inner i{
     text-align: center;
@@ -334,6 +344,14 @@ nav {
     line-height: 30px;
     display: inline-block;
     color: #353535;
+}
+.phoneNumber{
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.phoneNumber a{
+    color:#fff;
 }
 /* contact part css end */
 
